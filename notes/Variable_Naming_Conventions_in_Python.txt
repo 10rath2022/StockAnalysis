@@ -1,0 +1,26 @@
+Variable Naming Conventions in Python
+
+1: A variable name can contain only letters, numbers and understores
+2: Variable name can start with letters and understores but not with numbers
+3: Spaces are not allowed instead we can use _[understores]
+
+4: It should be short and descriptive[e.g. t_n x, teacher_name ✔]
+
+5: Variable is case-sensitve.
+
+Camel Case Conventions -- second and subsequent words are always Capitalized, e.g. studentName
+
+Pascal Case Conventions -- same as Camel but first also Capitalized e.g. StudentName
+
+Snake Case Conventions -- words are followed by understores, e.g. student_name
+
+
+Chained Assignment Variables
+
+x =y = z = 10
+
+x+y = 20
+
+my_module.py
+
+mypackage

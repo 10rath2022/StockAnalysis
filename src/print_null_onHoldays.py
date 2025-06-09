@@ -90,26 +90,26 @@ plt.show()
 # 👉 Uncomment below to run dual Y-axis version
 # ------------------------------------------
 
-# fig, ax1 = plt.subplots(figsize=(14, 6))
+fig, ax1 = plt.subplots(figsize=(14, 6))
 
-# # NSE on left axis
-# ax1.set_xlabel("Date")
-# ax1.set_ylabel("NSE Price (INR)", color="blue")
-# nse_line = ax1.plot(pandas_df["date"], pandas_df["nse_price"], color="blue", label="NSE (INR)")
-# ax1.tick_params(axis='y', labelcolor="blue")
+# NSE on left axis
+ax1.set_xlabel("Date")
+ax1.set_ylabel("NSE Price (INR)", color="blue")
+nse_line = ax1.plot(pandas_df["date"], pandas_df["nse_price"], color="blue", label="NSE (INR)")
+ax1.tick_params(axis='y', labelcolor="blue")
 
-# # NYSE on right axis
-# ax2 = ax1.twinx()
-# ax2.set_ylabel("NYSE Price (USD)", color="green")
-# nyse_line = ax2.plot(pandas_df["date"], pandas_df["nyse_price"], color="green", label="NYSE (USD)")
-# ax2.tick_params(axis='y', labelcolor="green")
+# NYSE on right axis
+ax2 = ax1.twinx()
+ax2.set_ylabel("NYSE Price (USD)", color="green")
+nyse_line = ax2.plot(pandas_df["date"], pandas_df["nyse_price"], color="green", label="NYSE (USD)")
+ax2.tick_params(axis='y', labelcolor="green")
 
-# # Combine legends from both axes
-# lines = nse_line + nyse_line
-# labels = [l.get_label() for l in lines]
-# ax1.legend(lines, labels, loc="lower right")
+# Combine legends from both axes
+lines = nse_line + nyse_line
+labels = [l.get_label() for l in lines]
+ax1.legend(lines, labels, loc="lower right")
 
-# plt.title("INFY: NSE vs NYSE Prices (Dual Y-Axis)")
-# fig.tight_layout()
-# plt.grid(True)
-# plt.show()
+plt.title("INFY: NSE vs NYSE Prices (Dual Y-Axis)")
+fig.tight_layout()
+plt.grid(True)
+plt.show()

@@ -1,3 +1,3 @@
 # Stock Analysis with Suhas Sir
 
-# pySpark practice projectg
+# pySpark practice project
