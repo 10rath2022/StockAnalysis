@@ -52,7 +52,7 @@ df1 = spark.createDataFrame(
 )
 
 df2 = spark.createDataFrame(
-    [(1, "Machine Learninggit"), (2, "Science"), (3, "History1"), (5, "Art")],
+    [(1, "Machine Learninggit"), (2, "Science"), (3, "History1"), (5, "Art1")],
     ["id", "subject"]
 )
 
